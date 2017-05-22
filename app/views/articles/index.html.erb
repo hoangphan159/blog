@@ -19,7 +19,12 @@
             </p>
 
             <p>
+              Tags: <%= raw article.tags.map(&:name).map { |t| link_to t, tag_path(t) }.join(', ') %>
+            </p>
+
+            <p>
               <%= link_to 'View details', article %>
+              <span class="badge badge-pill badge-default"> <%= article.view %> </span>
             </p>
         </div>
       <% end %>

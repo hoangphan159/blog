@@ -31,16 +31,16 @@ The following is a list of **required** features of the application you'll build
       http://v4-alpha.getbootstrap.com/examples/navbar/.
 * [x] User can Sign Up, Log In, & Sign Out of our application using the Devise gem.      
 * [x] The navbar will be responsive as well as **smart**, showing the user logical options related to authentication.
-* [ ] Only users that are logged in can create Articles.
-* [ ] Users can only edit & delete their own Articles.
-* [ ] User can only edit & delete their own comments.
+* [x] Only users that are logged in can create Articles.
+* [x] Users can only edit & delete their own Articles.
+* [x] User can only edit & delete their own comments.
 
 
 The following **optional** features are implemented:
 
-* [ ] User can see who created the Article.
+* [x] User can see who created the Article.
 * [ ] User can see how many views an Article has.
-* [ ] User can see who created the Comment.
+* [x] User can see who created the Comment.
 * [ ] User can add "tags" to a Article, and filter Articles by tag.
 
 > HINT: if you are unsure how to implement the Search feature, you can Google how to implement a simple search form. For example, one of the sites you will find is [this](http://www.jorgecoca.com/buils-search-form-ruby-rails/)

@@ -12,11 +12,25 @@ class ArticlesController < ApplicationController
     else
       @articles = Article.all.order("created_at DESC")
     end
+
+    @articles = if params[:tag]
+      Article.tagged_with(params[:tag])
+    else
+      Article.all.order("created_at DESC")
+    end
+
   end
 
   # GET /articles/1
   # GET /articles/1.json
   def show
+    if @article.view
+      @article.view += 1
+    else
+      @article.view = 1
+    end
+    @article.save()
+
     @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
   end
 
@@ -77,6 +91,6 @@ class ArticlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
-      params.require(:article).permit(:title, :body)
+      params.require(:article).permit(:title, :body, :tag_list)
     end
 end
