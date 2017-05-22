@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>Articles</h1>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-sm-12 blog-main">
+
+      <% @articles.each do |article| %>
+        <div class="blog-post">
+            <h2 class="blog-post-title"><%= article.title %></h2>
+            <p class="blog-post-meta">
+              <%= time_ago_in_words(article.created_at) %>
+              by <%= article.user.email %>
+            </p>
+
+            <p>
+              <%= @markdown.render(article.body).html_safe %>
+            </p>
+
+            <p>
+              <%= link_to 'View details', article %>
+            </p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
