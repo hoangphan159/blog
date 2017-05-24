@@ -5,13 +5,13 @@
 > - remove the `README.rdoc` file that Rails generates.
 > - remove all the HINT blocks in this file.
 
-**Name of your app** is a Ruby on Rails blog application.
+Blog is a Ruby on Rails blog application.
 
-Submitted by: **Your Name Here**
+Submitted by: Hoang Phan
 
-Time spent: **X** hours spent in total
+Time spent: 16 hours spent in total
 
-URL: **Insert your Heroku URL here**
+URL: https://still-taiga-38147.herokuapp.com/
 
 ## User Stories
 
@@ -39,9 +39,9 @@ The following is a list of **required** features of the application you'll build
 The following **optional** features are implemented:
 
 * [x] User can see who created the Article.
-* [ ] User can see how many views an Article has.
+* [x] User can see how many views an Article has.
 * [x] User can see who created the Comment.
-* [ ] User can add "tags" to a Article, and filter Articles by tag.
+* [x] User can add "tags" to a Article, and filter Articles by tag.
 
 > HINT: if you are unsure how to implement the Search feature, you can Google how to implement a simple search form. For example, one of the sites you will find is [this](http://www.jorgecoca.com/buils-search-form-ruby-rails/)
 
